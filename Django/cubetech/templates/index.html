@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>{{ bdata }}</h1>
+    <h2>Courses List:</h2>
+    <ul>
+        {% for course in clist %}
+            <li>{{ course }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Numbers:</h2>
+    <ul>
+        {% for number in numbers %}
+            <li>{{ number }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Student Details:</h2>
+    <ul>
+        {% for student in student_details %}
+            <li>Name: {{ student.name }}, Phone: {{ student.phone }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
